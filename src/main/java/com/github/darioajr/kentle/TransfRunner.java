@@ -1,4 +1,4 @@
-package br.com.senior.fabrica.arquitetura.poc.kentle;
+package com.github.darioajr.kentle;
 
 import org.apache.commons.lang.RandomStringUtils;
 import org.pentaho.di.core.Const;
@@ -43,7 +43,7 @@ public class TransfRunner {
     instance = new App();
 
     // run a transformation from the file system
-    Trans trans = instance.runTransformationFromFileSystem( "etl/Madeira.ktr" );
+    Trans trans = instance.runTransformationFromFileSystem( "etl/parameterized_transformation.ktr" );
 
     // retrieve logging appender
     LoggingBuffer appender = KettleLogStore.getAppender();
